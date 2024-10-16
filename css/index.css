@@ -1,0 +1,107 @@
+:root{
+    --colorBlanco : #FFFFFF;
+
+    --fuentePrincipal : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth; /* para dirigir a contactar sin que vaya de golpe */
+}
+body {
+    font-size: 16px; /* 1rem = 10px */
+    line-height: 1.5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.centrartexto{
+    text-align: center;
+}
+.centrarContenido{
+    display: grid;
+    place-content: center;
+}
+.contenedor {
+    width: min(90%, 180rem);
+    margin: 0 auto;
+}
+.presentacion{
+    background-image: url(../img/f1.jpeg);
+    height: 100vh; /* Usa la altura de la ventana */
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.presentacion-texto{
+    color: var(--colorBlanco);
+    font-size: 3.5rem;
+    font-family: var(--fuentePrincipal) ;
+    background: rgb(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.presentacion-texto2{
+    color: var(--colorBlanco);
+    font-size: 8rem;
+    font-family: var(--fuentePrincipal) ;
+}
+.salidas{
+    color: var(--colorBlanco);
+    background-image: url(../img/f2.jpeg);
+    height: 100vh; /* Usa la altura de la ventana */
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-image: fill 1 linear-gradient(to bottom, #0000008e, rgba(0, 0, 0, 0.055));
+}
+.cajaDeVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    width: 100%;
+    max-width: 800px;  /* Ancho máximo opcional */
+    margin: 0 auto;  /* Centrar horizontalmente */
+}
+
+iframe {
+    width: 100%;  /* El iframe ocupará todo el ancho del contenedor */
+    height: 450px;  /* Altura fija o puedes usar aspect-ratio */
+    border: none;  /* Quitar borde */
+}
+.footer{
+    background-color: black;
+    color: var(--colorBlanco);
+    text-align: center;
+    font-size: 2rem;
+}
+/* Estilos para la sección que contiene el botón */
+.descarga {
+    padding: 2rem;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;     /* Centrar verticalmente */}
+
+/* Estilos para el botón */
+.boton-descarga {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-descarga:hover {
+    background-color: #45a049;
+}
